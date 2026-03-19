@@ -31,7 +31,7 @@ function esPalindromo(texto) {
         if (palabra[izquierda] !== palabra[derecha]) {
             // Si son diferentes, no es un palíndromo <---------
             return false,
-            console.log(`La palabra ´${palabra}´ No es un polindromo`)
+            console.log(`La palabra ´${palabra}´ No es un polindromo`),
             console.log("-----------------------------"); 
         }
 
