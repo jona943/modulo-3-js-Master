@@ -30,7 +30,9 @@ function esPalindromo(texto) {
 
         if (palabra[izquierda] !== palabra[derecha]) {
             // Si son diferentes, no es un palíndromo <---------
-            return false; // Se puede colocar un console.log pero es mas simple con valor buleano
+            return false,
+            console.log(`La palabra ´${palabra}´ No es un polindromo`)
+            console.log("-----------------------------"); 
         }
 
         // Movemos los punteros hacia el centro <---------
@@ -39,15 +41,11 @@ function esPalindromo(texto) {
     }
 
     // Si terminamos el ciclo sin encontrar diferencias, es un palíndromo
-    return true; // Se puede colocar un console.log pero es mas simple con valor buleano
+    return true,
+    console.log(`La palabra ´${palabra}´ es un polindromo`),
+    console.log("-----------------------------"); 
 }
-
 // --- Pruebas del código ---
 
-let prueba1 = "Radar";
-console.log(`¿Es "${prueba1}" un palíndromo?:`, esPalindromo(prueba1)); 
-
-console.log("--------------------");
-
-let prueba2 = "Javascript";
-console.log(`¿Es "${prueba2}" un palíndromo?:`, esPalindromo(prueba2));
+esPalindromo("Radar");
+esPalindromo("Nadar");
