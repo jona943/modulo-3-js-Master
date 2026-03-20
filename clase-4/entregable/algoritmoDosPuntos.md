@@ -13,4 +13,4 @@ Tienes una lista de invitados ordenada alfabéticamente, y tu tarea es organizar
 3. Si coinciden, detén la búsqueda y devuelve los nombres.
 4. Si no coinciden, avanza ambos punteros y repite.
 5. Detén la búsqueda si recorres toda la lista sin encontrar un par.
-6. Puedes consultar un extracto de código para comenzar con la solución, se incluye un ejmplo de lo que se espera en la siguiente url:     https://gist.github.com/heladio-devf-mx/e091e8dba47d51693cec1154f1cd2ed6
+6. Puedes consultar un extracto de código para comenzar con la solución, se incluye un ejmplo de lo que se espera en la siguiente url:     https://gist.github.com/heladio-devf-mx/e091e8dba47d51693cec1154f1cd2ed6 
