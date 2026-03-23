@@ -14,7 +14,7 @@ function encontrarPareja(arreglo) {
         }
         // TODO: Avanza los punteros si no coinciden
         // ...
-        inicio++;
+        inicio++
         siguiente++;
     }
 
