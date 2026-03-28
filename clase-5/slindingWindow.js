@@ -10,3 +10,8 @@ function maxSum(arr, k) {
     }
     return max;
 }
+
+
+let arreglo = [1, 2, 3, 4, 5, 6, 7, 8];
+
+console.log(maxSum(arreglo, 3));
