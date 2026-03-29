@@ -21,9 +21,7 @@ function findGift(gifts, giftName, index = 0) {
 }
 // Casos de ejemplo:
 // Llama a la función con los datos de entrada y muestra el resultado en la consola.
-// Llama a la función y prueba con diferentes regalos
-let giftToFind = "Lego";
-console.log(findGift(gifts, giftToFind));
+// Llama a la función y prueba con diferentes re
 // Salida esperada:
 // "Lego está en la posición 3."
 
