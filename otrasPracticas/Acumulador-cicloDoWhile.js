@@ -13,5 +13,5 @@ do {
 
 
 } while (
-    acumulador <= valorMax
+    i <= valorMax
 );

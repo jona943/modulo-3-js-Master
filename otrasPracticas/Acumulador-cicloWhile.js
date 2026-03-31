@@ -3,7 +3,7 @@ let acumuador = 0;
 let indice = 0;
 const valorMax = 5;
  
-while (acumuador <= valorMax) {
+while (indice <= valorMax) {
     console.log(`La suma de ${acumuador} + ${indice}`);
     acumuador += indice;
     console.log(`Total acumulado: ${acumuador}`);
