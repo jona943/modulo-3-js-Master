@@ -49,7 +49,7 @@ fs.writeFile(filePath, 'Hola, Node.js esto fue escrito desde app.js WOOOW-------
 
 console.log('-----------------')
 // Agregar contenido 
-fs.appendFile(filePath1, '\nEsta es una nueva linea que se agrego a nuestro archivo!', (error) => {
+fs.appendFile(filePath, '\nEsta es una nueva linea que se agrego a nuestro archivo!', (error) => {
     
     if(error){
         console.error('Ocurrio un error al AGREGAR contenido al archivo:', error);
@@ -62,5 +62,13 @@ fs.appendFile(filePath1, '\nEsta es una nueva linea que se agrego a nuestro arch
 
 // Esta funcion es util para: logs, bitacoras, historiales o algun archivo que crezca con el tiempo.
 
+// Elimar un archivo
+fs.unlink(filePath1, (error) => {
+    if(error){
+        console.error('Ocurrio un error al ELIMINAR el archivo:', error);
+        return; // Con return detenemos esta funcion
+    }
+    //Si no existio ningun error 
+    console.log('El archivo fue ELIMINADO correctamente');
 
-
+})
