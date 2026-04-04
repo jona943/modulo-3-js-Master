@@ -46,3 +46,21 @@ fs.writeFile(filePath, 'Hola, Node.js esto fue escrito desde app.js WOOOW-------
     //Si no existio ningun error 
     console.log('El archivo fue ESCRITO correctamente');
 })
+
+console.log('-----------------')
+// Agregar contenido 
+fs.appendFile(filePath1, '\nEsta es una nueva linea que se agrego a nuestro archivo!', (error) => {
+    
+    if(error){
+        console.error('Ocurrio un error al AGREGAR contenido al archivo:', error);
+        return; // Con return detenemos esta funcion
+    }
+    //Si no existio ningun error 
+    console.log('El contenido fue AGREGADO correctamente');
+
+})
+
+// Esta funcion es util para: logs, bitacoras, historiales o algun archivo que crezca con el tiempo.
+
+
+
