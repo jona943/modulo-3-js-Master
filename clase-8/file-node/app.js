@@ -12,7 +12,7 @@ Opte por usar el modulo path por errores de de ruta relativa:
 // import fs from 'fs'; 
 
 // Verificando si un archivo existe
-const filePath = './example.txt';
+const filePath = path.join(__dirname, 'example.txt');
 const filePath1 = path.join(__dirname, 'nota.txt');
 console.log(`Ruta que buscamos: ${filePath1}`) // Vemos la ruta 
 
@@ -20,7 +20,7 @@ if (fs.existsSync(filePath1)) { // Indica que nuestra funcion es sincrona
 console.log('El archivo existe!');
 } else {
 console.log(`El archivo no existe : ${filePath1}`);
-}
+};
 
 console.log('-----------------')
 
@@ -33,5 +33,16 @@ fs.readFile(filePath1, 'utf8', (error, contenido) => {
     //Si no existio ningun error 
     console.log('---Contenido del archivo---')
     console.log(contenido);
-})
+});
 
+
+// Escribir un archivo si no existe, o cambiar el contenido de uno existente 
+// writeFile remplaza el contenido anterior (es util pero peligroso)
+fs.writeFile(filePath, 'Hola, Node.js esto fue escrito desde app.js WOOOW---------->', (error) =>{
+    if(error){
+        console.error('Ocurrio un error al ESCRIBIR el archivo:', error);
+        return; // Con return detenemos esta funcion
+    }
+    //Si no existio ningun error 
+    console.log('El archivo fue ESCRITO correctamente');
+})
